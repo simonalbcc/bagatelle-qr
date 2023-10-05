@@ -1,58 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
 }
-
-.container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 h1 {
+    background-color: #ff9100f8; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-body {
     text-align: center;
-    color: #e85a4f;
-    font-size: 32px;
-    margin-bottom: 20px;
 }
 
-.category {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+.menu-list {
+    max-height: 0;
+    overflow-y: auto;
+    transition: max-height 0.3s ease-in-out;
 }
-
-.list-group-item {
-    border: none;
-    border-top: 1px solid #ddd;
-    padding: 20px;
-    position: relative;
-    transition: background-color 0.3s;
-}
-
-.list-group-item h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.list-group-item p {
-    font-size: 16px;
+.item-description {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
     color: #666;
-    margin-bottom: 0;
-}
-
-.list-group-item:hover {
-    background-color: #f5f5f5;
-}
-
-
-
-.list-group-item img {
-    max-width: 10%; 
-    height: auto;
-    border-radius: 8px;
-    float: right; 
 }
